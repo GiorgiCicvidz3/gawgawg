@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Computer List</h1>
+    <ul>
+        {% for comp in computers %}
+            <li>{{ comp.brand }} {{ comp.name }} - ${{ comp.price }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
